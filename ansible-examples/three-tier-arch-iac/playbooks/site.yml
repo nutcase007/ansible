@@ -1,6 +1,6 @@
 ---
 - name: Install WebServer
-  hosts: tag_Name_MgdNode_WebServer
+  hosts: WebServer
   #remote_user: root
   remote_user: ec2-user
   become: yes
@@ -10,7 +10,7 @@
     - nginx
 
 - name: Install DB Sevrer
-  hosts: tag_Name_MgdNode_DBServer
+  hosts: DBServer
   #remote_user: root
   remote_user: ec2-user
   become: yes
